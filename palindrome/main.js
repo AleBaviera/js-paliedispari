@@ -14,19 +14,20 @@ parola = [];
   function palindroma(){
     var a = [];
     a = prompt('inserisci una parola').split(",");
+    var b = a.reverse();
+    // for (var i = 0; i < a.length; i++) {
 
-    for (var i = 0; i < a.length; i++) {
 
-
-      if (a === a.reverse()){
-        console.log(a.reverse());
+      if (a === b){
+        console.log('questa è a ' + a);
+        console.log('questa è b ' + b);
         return 'è palindroma';
 
       }
       else {
         return ' non è palindroma';
       }
-    }
+    // }
   }
 
 // richiamo la funzione e restituisco risultato
