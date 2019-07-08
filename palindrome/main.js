@@ -13,12 +13,12 @@ parola = [];
 // creo funzione
   function palindroma(){
     var a = [];
-    a = prompt('inserisci una parola');
+    a = prompt('inserisci una parola').split(",");
 
     for (var i = 0; i < a.length; i++) {
 
 
-      if (a[i] === a[i].reverse()){
+      if (a === a.reverse()){
         console.log(a.reverse());
         return 'è palindroma';
 
