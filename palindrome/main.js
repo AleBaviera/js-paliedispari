@@ -4,7 +4,7 @@ console.log('cia');
 // 1 -Una funzione per capire se la parola è palindroma;
 
 // dichiaro var
-var risultato, parola, elemento, risultatoparz;
+var risultato, parola, elemento;
 elemento = document.getElementById('mio-id');
 
 // chiedo parola e la metto in array
@@ -49,12 +49,12 @@ parola = parola.join('');
 risultato = palindroma(parola);
 
  console.log(risultato);
-
+ elemento.innerHTML = risultato;
  // console.log(parola);
 
 // for (var i = 0; i < parola.length; i++) {
 //   risultatoparz = elemento.innerHTML;
 //   risultato = risultatoparz  + parola[i];
 //   console.log(risultato);
-//   risultato.innerHTML;
+//
 // }
