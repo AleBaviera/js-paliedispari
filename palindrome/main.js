@@ -4,7 +4,8 @@ console.log('cia');
 // 1 -Una funzione per capire se la parola è palindroma;
 
 // dichiaro var
-var risultato, parola;
+var risultato, parola, elemento, risultatoparz;
+elemento = document.getElementById('mio-id');
 
 // chiedo parola e la metto in array
 parola = [];
@@ -16,11 +17,9 @@ console.log(parola);
   function palindroma(a){
      // var a = [];
     console.log(a);
-    // a = prompt('inserisci una parola').split(",");
-    // var b = [];
+
     var c = a.length - 1;
-    // var b = a.reverse();
-    
+
     //
     //  console.log(a);
     //
@@ -31,11 +30,11 @@ console.log(parola);
         if (a[i] === a[j]){
           // console.log('questa è a ' + a);
 
-          return 'è palindroma';
+          return 'La parola ' + a + ' è palindroma';
 
         }
         else {
-          return ' non è palindroma';
+          return 'La parola ' + a + ' non è palindroma';
         }
 
       }
@@ -46,8 +45,16 @@ console.log(parola);
   }
 
 // richiamo la funzione e restituisco risultato
-// console.log('letta al contrario è' + palindroma(parola));
-
+parola = parola.join('');
 risultato = palindroma(parola);
 
-console.log(risultato);
+ console.log(risultato);
+
+ // console.log(parola);
+
+// for (var i = 0; i < parola.length; i++) {
+//   risultatoparz = elemento.innerHTML;
+//   risultato = risultatoparz  + parola[i];
+//   console.log(risultato);
+//   risultato.innerHTML;
+// }
